@@ -30,8 +30,8 @@ const featuresContainer = document.getElementById('features');
 
 const dataFeatures = features.map(
   (feature) => /*html*/ `
-    <div class="carousel-cell my-2 mx-4">
-      <div class="card-feature">
+    <div class="carousel-cell my-2 mx-3">
+      <div class="card-feature mx-2">
         <img src="${feature.image}" alt=${feature.name} class="img-feature" />
         <div class="transbox">
           <img
