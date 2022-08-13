@@ -121,11 +121,13 @@ a.btn-link:hover {
 
 .container-steps,
 .container-featured {
+  display: flex;
+  flex-direction: column;
   margin-top: 100px;
 }
 
 .card-step {
-  width: 360px;
+  width: 100%;
   padding: 30px;
   background-color: var(--gray-primary);
   border-radius: 26px;
@@ -219,8 +221,8 @@ a.btn-link:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 120px;
-  row-gap: 60px;
+  column-gap: 100px;
+  row-gap: 50px;
 }
 
 .footer {
@@ -261,7 +263,7 @@ a.btn-link:hover {
     padding-inline: 60px;
   }
   .hero-banner {
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .navbar .container-fluid {
     padding-block: 20px;
@@ -273,5 +275,8 @@ a.btn-link:hover {
   .main-content,
   .footer {
     padding-inline: 16px;
+  }
+  .btn-secondary {
+    width: 100%;
   }
 }

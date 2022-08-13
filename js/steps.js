@@ -20,7 +20,7 @@ const stepsContainer = document.getElementById('steps');
 
 const dataSteps = steps.map(
   (step) => /*html*/ `
-    <div class="card-step">
+    <div class="card-step" data-aos="fade-up">
         <img src="${step.icon}" alt="Icon Start" />
         <h4 class="heading fw-semibold mt-4">${step.title}</h4>
         <p class="caption mt-2 mb-0">

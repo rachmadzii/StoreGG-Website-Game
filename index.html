@@ -17,10 +17,7 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <script
-      src="https://kit.fontawesome.com/32f82e1dca.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -86,26 +83,27 @@
           alt="Banner StoreGG"
           class="d-md-block d-none"
           width="55%"
+          data-aos="zoom-in"
         />
       </section>
-      <section class="container-steps mt-100">
+      <section class="container-steps mt-100 gap-4">
         <h2 class="heading lh-base text-center">
           It’s Really That <br />
           Easy to Win the Game
         </h2>
         <div
           id="steps"
-          class="d-flex gap-5 justify-content-center mt-5 flex-wrap"
+          class="d-flex gap-5 justify-content-center flex-column flex-lg-row"
         ></div>
       </section>
-      <section class="container-featured mt-100">
+      <section class="container-featured mt-100 gap-4">
         <h2 class="heading lh-base">
           Our Featured <br />
           Games This Year
         </h2>
         <div
           id="features"
-          class="carousel mt-5"
+          class="carousel"
           data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false }'
         ></div>
       </section>
@@ -141,6 +139,7 @@
           alt="Story StoreGG"
           class="d-md-block d-none"
           width="50%"
+          data-aos="zoom-in-up"
         />
         <div class="content">
           <h1 class="heading lh-base">
@@ -196,5 +195,13 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/32f82e1dca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
